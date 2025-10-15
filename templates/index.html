@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InpaintAnything</title>
+</head>
+<body>
+  <div class="selection-container">
+    <div class="selection">
+      <a href="/removeAnything">
+        <div class="image-container">
+          <img src="static/remove.png" alt="remove anything">
+        </div>
+        <div class="intro">
+          <span class="title">Remove anything</span>
+          <span>Click on an object in the image, and Inpainting Anything will remove it instantly!</span>
+        </div>
+      </a>
+    </div>
+    <div class="selection">
+      <a href="/fillAnything">
+        <div class="image-container">
+          <img src="static/fill.png" alt="fill anything">
+        </div>
+        <div class="intro">
+          <span class="title">Fill anything</span>
+          <span>Click on an object, type in what you want to fill, and Inpaint Anything will fill it!</span>
+        </div>
+      </a>
+    </div>
+    <div class="selection">
+      <a href="/replaceAnything">
+        <div class="image-container">
+          <img src="static/replace.png" alt="replace anything">
+        </div>
+        <div class="intro">
+          <span class="title">Replace anything</span>
+          <span>Click on an object, type in what background you want to replace, and Inpaint Anything will replace it!</span>
+        </div>
+      </a>
+    </div>
+    <div class="selection">
+      <a href="/removeAnythingVideo">
+        <div class="image-container">
+          <img src="static/removeVideo.png" alt="remove anything video">
+        </div>
+        <div class="intro">
+          <span class="title">Remove anything video</span>
+          <span>With a single click on an object in the first video frame, Remove Anything Video can remove the object from the whole video!</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
+
+<style>
+  .selection-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .selection {
+    flex-direction: column;
+    width: 35%;
+    margin: 5px;
+    border-radius: 24px;
+    background-color: #f8fafd;
+  }
+  .selection:hover {
+    background-color: #c2e7ff;
+  }
+  .image-container {
+    width: 100%;
+  }
+  img {
+    width: 100%;
+    height: 298px;
+    border-radius: 24px;
+  }
+  a {
+    text-decoration:none;
+    color: black;
+  }
+  .intro {
+    padding: 3%;
+  }
+  .title {
+    font-size: 24px;
+  }
+  span {
+    display:inline-block
+  }
+</style>
